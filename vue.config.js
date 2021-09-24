@@ -31,11 +31,12 @@ module.exports = {
       warnings: false,
       errors: true
     },
-    Proxy:{
-      [process.env.VUE_APP_BASE_API]:{
-        target: process.env.NODE_ENV === 'production' ? '线上地址':'测试地址'
-      }
-    }
+    // Proxy:{
+    //   [process.env.VUE_APP_BASE_API]:{
+    //     target: process.env.NODE_ENV === 'production' ? '线上地址':'测试地址'
+    //   }
+    // },
+    
     
   }
 }
