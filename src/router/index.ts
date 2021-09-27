@@ -21,6 +21,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Address',
     component: () => import(/* webpackChunkName: "address" */ '@/views/address/AddressList')
   },
+  {
+    path: '/address/edit',
+    name: 'AddressEdit',
+    component: () => import(/* webpackChunkName: "AddressEdit" */ '@/views/address/AddressEdit')
+  },
 ]
 
 const router = createRouter({
