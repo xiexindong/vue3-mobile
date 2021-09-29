@@ -14,7 +14,8 @@ export default defineComponent({
 
         function initAddressData(){
             const copyData = []
-            CITYS.map(n=>{
+            CITYS.map(item=>{
+                copyData.push({"text":item.n})
                 
             })
         }

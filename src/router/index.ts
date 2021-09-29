@@ -26,6 +26,16 @@ const routes: Array<RouteRecordRaw> = [
     name: 'AddressEdit',
     component: () => import(/* webpackChunkName: "AddressEdit" */ '@/views/address/AddressEdit')
   },
+  {
+    path: '/courseware',
+    name: 'Courseware',
+    component: () => import(/* webpackChunkName: "courseware" */ '@/views/courseware/index.vue'),
+  },
+  {
+    path: '/courseware/setup',
+    name: 'courseware/setup',
+    component: ()=> import(/* webpackChunkName: "courseware/ref" */ '@/views/courseware/setup.vue')
+  },
 ]
 
 const router = createRouter({
