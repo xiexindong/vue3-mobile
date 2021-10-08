@@ -51,6 +51,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'courseware/2-slots',
     component: ()=> import(/* webpackChunkName: "courseware/2-slots" */ '@/views/courseware/2-slots/parent.vue')
   },
+  {
+    path: '/courseware/2-props',
+    name: 'courseware/2-props',
+    component: ()=> import(/* webpackChunkName: "courseware/2-slots" */ '@/views/courseware/2-props/parent.vue')
+  },
 ]
 
 const router = createRouter({
