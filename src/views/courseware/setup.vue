@@ -1,8 +1,6 @@
 <template>
     <div>
-        <h1>setup 执行时机</h1>
-        <slot>9999999999999999</slot>
-        <slot name="title"></slot>
+        <h1>子组件生命周期</h1>
     </div>
 </template>
 
@@ -15,37 +13,17 @@ export default defineComponent({
             msg:'hello'
         }
     },
-    props:{
-        three:String,
-        two:String
-
-    },
+  
 
     setup(props,context){
         // 在创建组件之前调用的，没有this
-        // console.log('setup()--------')
+        console.log('setup()--------')
         // console.log('setup()--------',this)
-
-        // 参数一
-        // console.log('setup()--------',props)
-        // 参数二: context 上下文  attrs emit slots  expose
-        // context 非响应式属性 可以用context.attrs 访问
-  
-        // console.log(context.attrs.desc)
-
-        // 插槽 (非响应式对象)
-        // console.log(context.slots.default())
-        // console.log(context.slots.title())
-
-        // 触发事件 (方法)
-        // context.emit('myAdd',2222)
-
-
 
     },
     beforeCreate(){
-        // console.log('beforeCreate()--------')
-        // console.log('beforeCreate()--------',this)
+        console.log('beforeCreate()--------')
+        console.log('beforeCreate()--------',this)
 
     },
     created(){
@@ -55,8 +33,9 @@ export default defineComponent({
         console.log('created()--------')
         console.log('created()-----',JSON.stringify(this))
         console.log('created()--------',this.msg)
-
-
+    },
+     mounted(){
+        console.log('onMounted')
     }
 })
 </script>
