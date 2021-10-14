@@ -32,9 +32,9 @@ export default defineComponent({
         // 那也就意味着子组件是没有满足封装性的。
         const handleClick = ()=>{
             console.log(child.value)
-            console.log(child.value.data1)
-            console.log(child.value.data2)
-            child.value.toDo()
+            // console.log(child.value.data1)
+            // console.log(child.value.data2)
+            // child.value.toDo()
         }
 
         

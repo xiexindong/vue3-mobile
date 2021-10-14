@@ -54,10 +54,56 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/courseware/2-props',
     name: 'courseware/2-props',
-    component: ()=> import(/* webpackChunkName: "courseware/2-slots" */ '@/views/courseware/2-props/parent.vue')
+    component: ()=> import(/* webpackChunkName: "courseware/2-props" */ '@/views/courseware/2-props/parent.vue')
+  },
+  {
+    path: '/courseware/1-life',
+    name: 'courseware/1-life',
+    component: ()=> import(/* webpackChunkName: "courseware/1-life" */ '@/views/courseware/1-life/index.vue')
+  },
+  {
+    path: '/courseware/3-ref',
+    name: 'courseware/3-ref',
+    component: ()=> import(/* webpackChunkName: "courseware/3-ref" */ '@/views/courseware/3-ref/index.vue')
+  },
+  {
+    path: '/courseware/3-reactive',
+    name: 'courseware/3-reactive',
+    component: ()=> import(/* webpackChunkName: "courseware/3-reactive" */ '@/views/courseware/3-reactive/index.vue')
+  },
+  {
+    path: '/courseware/3-toRefs',
+    name: 'courseware/3-toRefs',
+    component: ()=> import(/* webpackChunkName: "courseware/3-toRefs" */ '@/views/courseware/3-toRefs/index.vue')
+  },
+  {
+    path: '/courseware/3-computed',
+    name: 'courseware/3-computed',
+    component: ()=> import(/* webpackChunkName: "courseware/3-computed" */ '@/views/courseware/3-computed/index.vue')
+  },
+  {
+    path: '/courseware/3-watch',
+    name: 'courseware/3-watch',
+    component: ()=> import(/* webpackChunkName: "courseware/3-watch" */ '@/views/courseware/3-watch/index.vue')
+  },
+  {
+    path: '/courseware/3-watchEffect',
+    name: 'courseware/3-watchEffect',
+    component: ()=> import(/* webpackChunkName: "courseware/3-watchEffect" */ '@/views/courseware/3-watchEffect/index.vue')
+  },
+  {
+    path: '/courseware/4-provide',
+    name: 'courseware/4-provide',
+    component: ()=> import(/* webpackChunkName: "courseware/4-provide" */ '@/views/courseware/4-provide/parent.vue')
+  },
+  {
+    path: '/courseware/4-provide2',
+    name: 'courseware/4-provide2',
+    component: ()=> import(/* webpackChunkName: "courseware/4-provide" */ '@/views/courseware/4-provide2/parent.vue')
   },
 ]
 
+ 
 const router = createRouter({
   history: createWebHashHistory(),
   routes
