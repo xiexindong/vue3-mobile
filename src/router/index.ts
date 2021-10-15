@@ -101,6 +101,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'courseware/4-provide2',
     component: ()=> import(/* webpackChunkName: "courseware/4-provide" */ '@/views/courseware/4-provide2/parent.vue')
   },
+  {
+    path: '/courseware/5-reactive',
+    name: 'courseware/5-reactive',
+    component: ()=> import(/* webpackChunkName: "courseware/5-reactive" */ '@/views/courseware/5-reactive/index.vue')
+  },
 ]
 
  
