@@ -1,9 +1,17 @@
 <template>
   <div>
-    <grandson />
+      儿子
+      <Grandson/>
   </div>
 </template>
 
-<script setup>
-import grandson from "./grandson.vue";
+<script lang="ts">
+import { defineComponent } from 'vue'
+import Grandson from './grandson.vue';
+
+export default defineComponent({
+  components:{
+    Grandson
+  }
+})
 </script>
