@@ -8,17 +8,23 @@ import { defineComponent, effect, reactive } from 'vue'
 
 export default defineComponent({
     setup() {
-        debugger
-        let name =  reactive({
+        
+        let proxy =  reactive({
             name:'lisi'
         })
 
         effect(()=>{
-            console.log(name)
+            console.log(proxy.name)
         })
 
+
+        proxy.name = 'zhangsan'
+
+        
+        
+
         return {
-            name
+            proxy
         }
         
     },
